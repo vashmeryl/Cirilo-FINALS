@@ -1,0 +1,139 @@
+.products {
+    padding: 5rem 2rem;
+    
+}
+
+.products__container {
+    max-width: 1000px;
+    margin-inline: auto;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    padding: 1rem 1rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.products__card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    row-gap: 50px;
+}
+
+.products__card {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.products__card-img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.products__card-description {
+    text-align: center;
+}
+
+.products__goals-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    gap: 20px;
+}
+
+.products__card-img-wrapper,
+.products__goals-card-img-wrapper {
+    overflow: hidden;
+}
+
+.products__goals-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.products__goals-card-img:hover,
+.products__card-img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media screen and (min-width: 769px) and (max-width: 999px) {
+    .products__card-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        row-gap: 5px;
+    }
+
+    .products__goals-card {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+    .products__card-description {
+        font-size: 0.9rem;
+    }
+
+    .products__goals-card-description {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .products__card-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+        row-gap: 5px;
+    }
+
+    .products__goals-card {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products__card-description {
+        font-size: 0.9rem;
+    }
+
+    .products__goals-card-description {
+        font-size: 0.9rem;
+    }
+       
+}
+
+@media screen and (max-width: 599px) {
+    .products__card-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; 
+        row-gap: 5px;
+    }
+
+    .products__goals-card {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products__card-description {
+        font-size: 0.9rem;
+    }
+
+    .products__goals-card-description {
+        font-size: 0.9rem;
+    }
+}

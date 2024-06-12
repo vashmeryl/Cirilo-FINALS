@@ -1,0 +1,183 @@
+.background {
+    padding: 0 2rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    background: rgb(255,240,240);
+    background: linear-gradient(0deg, rgba(255,240,240,1) 0%, rgba(255,255,255,1) 49%);
+    position: relative;
+}
+
+.background__container {
+    max-width: 1000px;
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background: white;
+}
+
+.background__left-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.4fr 1fr;
+    gap: 10px;
+}
+
+.background__banner-logo-card {
+    
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.background__banner-logo-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.background__banner-logo-card {
+    text-align: center;
+}
+
+.background__banner-logo {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.background__card {
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.background__card-img-wrapper {
+    overflow: hidden;
+}
+
+.background__card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.background__card-img:hover {
+    transform: scale(1.1);
+}
+
+.background__card-description {
+    text-align: center;
+}
+
+.background__building-card {
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.background__building-img-wrapper {
+    overflow: hidden;
+}
+
+.background__building-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.background__building-img:hover {
+    transform: scale(1.1);
+}
+
+.background__building-description {
+    text-align: center;
+}
+
+
+.custom-shape-divider-bottom-1718184911 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1718184911 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 21px;
+}
+
+.custom-shape-divider-bottom-1718184911 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media screen and (min-width: 769px) and (max-width: 999px) {
+    .background__container {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .background__container {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }   
+}
+
+@media screen and (max-width: 599px) {
+    .background__banner-logo-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .background__banner-logo-description {
+        font-size: 0.9rem;
+    }
+
+    .background__container {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }   
+
+    .background__left-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .background__card-description {
+        font-size: 0.9rem;
+    }
+
+    .background__building-description{
+        font-size: 0.9rem;
+    }
+
+    .background__container {
+        padding: 0.5rem 0.5rem;
+    }
+}

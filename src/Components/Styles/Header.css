@@ -1,0 +1,36 @@
+.header {
+    background: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+.header__logo {
+    font-weight: 500;
+    color: rgb(252, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.header__link {
+    color: rgb(255, 0, 0);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media screen and (max-width: 599px) {
+    .header__logo {
+        font-size: 1rem;
+    }
+    
+    .header__link {
+        font-size: 0.9rem;
+    }
+}
