@@ -3,8 +3,47 @@
     padding-top: 2rem;
     padding-bottom: 8rem;
     background: rgb(255,240,240);
-    background: linear-gradient(0deg, rgba(255,240,240,1) 0%, rgba(255,255,255,1) 49%);
+    background: linear-gradient(0deg, rgba(200, 155, 60,0.4) 0%, rgba(255,255,255,1) 49%);
     position: relative;
+}
+
+.h1 {
+    font-family: 'Bellefair-regular';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #785A28;
+}
+
+.rift {
+    font-family: 'Bellefair-regular';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #785A28;
+    text-align: center;
+}
+
+.aram {
+    font-family: 'Bellefair-regular';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #785A28;
+    text-align: center;
+}
+
+.runeterra {
+    font-family: 'Bellefair-regular';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #C89B3C;
+    text-align: center;
 }
 
 .background__container {
@@ -92,9 +131,10 @@
     overflow: hidden;
 }
 
-.background__building-img {
-    height: 100%;
+.background__runeterra-img {
+    height: 650px;
     width: 100%;
+    margin-top: -70px;
     object-fit: contain;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -104,7 +144,13 @@
     transform: scale(1.1);
 }
 
-.background__building-description {
+.background__runeterra-description {
+    margin-top: -70px;
+    text-align: center;
+}
+
+.background__runeterra2-description {
+    margin-top: -10px;
     text-align: center;
 }
 

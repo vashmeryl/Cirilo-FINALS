@@ -1,5 +1,5 @@
 .header {
-    background: #ffffff;
+    background-color: rgb(1, 10, 19);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -12,15 +12,27 @@
 
 .header__logo {
     font-weight: 500;
-    color: rgb(252, 0, 0);
-    font-size: 1.3rem;
-    font-weight: 700;
+    color: #C89B3C;
+    font-weight: 550;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.header__logo:hover {
+    color: #C89B3C;
 }
 
 .header__link {
-    color: rgb(255, 0, 0);
+    color: #F0E6D2;
+    font-family: 'Bellefair-regular';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.header__link:hover {
+    color: #C89B3C;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */

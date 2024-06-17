@@ -1,9 +1,9 @@
 import React from 'react'
 import '../Styles/Background.css';
-import DucatiLogo from '../Assets/ducatiLogo.png';
-import Location from '../Assets/location.jpg';
-import DucatiCEO from '../Assets/ducatiCEO.png';
-import DucatiBuilding from '../Assets/ducatiBuilding.jpg';
+import LeagueVector from '../Assets/leagueVector.png';
+import Runeterra from '../Assets/runeterra.png';
+import AramIcon from '../Assets/aramIcon.png';
+import RiftIcon from '../Assets/riftIcon.png';
 
 function Background() {
   return (
@@ -14,37 +14,43 @@ function Background() {
                 <div className='background__banner-logo-wrapper'>
                     <div className='background__banner-logo-card'>
                         <div className='background__banner-logo-card-img-wrapper'>
-                            <img src={DucatiLogo} className='background__banner-logo'/>
-                        </div>  
-                        <p className='background__banner-logo-description'>The Ducati logo represents the renowned Italian motorcycle manufacturer, known for its high-performance bikes. The emblem typically features a sleek, modern design with a red background, signifying passion and energy, which are core elements of the Ducati brand.</p>
+                            <img src={LeagueVector} className='background__banner-logo'/>
+                        </div>
+                        <h1 className='h1'>What is League of Legends?</h1>
+                        <p className='background__banner-logo-description'>League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other’s base. Choose from over 168 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.</p>
+                        <h1 className='h1'>League has two gamemodes: </h1>
                     </div>
                 </div>
 
                 <div className='background__card-wrapper'>
                     <div className='background__card'>
                         <div className='background__card-img-wrapper'>
-                            <img src={Location} className='background__card-img'/>
+                            <img src={RiftIcon} className='background__card-img'/>
                         </div>  
-                        <p className='background__card-description'>The company's headquarters are located in Borgo Panigale, Bologna, Italy, a region known for its rich automotive heritage.</p>
+                        <h1 className='rift'>SUMMONER'S RIFT (NORMAL GAME)</h1>
+                        <p className='background__card-description'>Summoner's Rift is a 5v5 multiplayer map wherein the objective is to destroy the enemy's nexus.</p>
                     </div>
                 </div>
 
                 <div className='background__card-wrapper'>
                     <div className='background__card'>
                         <div className='background__card-img-wrapper'>
-                            <img src={DucatiCEO} className='background__card-img'/>
-                        </div>  
-                        <p className='background__card-description'>Claudio Domenicali is the current CEO of Ducati. He has been with the company for many years and has played a significant role in its growth and success.</p>
+                            <img src={AramIcon} className='background__card-img'/>
+                        </div>
+                        <h1 className='aram'>ALL RANDOM ALL MID (ARAM)</h1>
+                        <p className='background__card-description'>Upon entering champion selection, ten summoners, five on each team, randomly summon a champion from their available pool of champions.</p>
                     </div>
                 </div>
             </div>
 
             <div className='background__right-content'>
                 <div className='background__building-card'>
+                <h1 className='runeterra'>RUNETERRA</h1>
                     <div className='background__building-img-wrapper'>
-                        <img src={DucatiBuilding} className='background__building-img'></img>
+                        <img src={Runeterra} className='background__runeterra-img'></img>
                     </div>
-                    <p className='background__building-description'>The Ducati headquarters building is a blend of modern design and industrial functionality. It features sleek lines, extensive use of glass, and a dynamic layout that reflects the brand's commitment to innovation and performance.</p>
+                    <p className='background__runeterra-description'>Runeterra (meaning magic earth) is a plane of existence composed of the physical realm: an oblate spheroid planet and the Spirit Realm. It is also the fictional world where most of the lore of the League of Legends icon League of Legends intellectual property takes place. Runeterra is part of the larger Runeterra Map profileicon Runeterra Prime universe.</p>
+                    <p className='background__runeterra2-description'>The planet orbits around a G-type star while a natural satellite moon orbits around the planet. Runeterra's sun and moon also even mirrored equivalents in the spirit realm.</p>
                 </div>
             </div>
         </div>
