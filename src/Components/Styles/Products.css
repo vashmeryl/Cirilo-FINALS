@@ -1,7 +1,33 @@
 .products {
     padding: 5rem 2rem;
-    
 }
+
+.roles {
+    text-align: center;
+    font-family: 'Bellefair-regular';
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 800;
+    color: #785A28;
+}
+
+.role1 {
+    text-align: center;
+    font-family: 'Bellefair-regular';
+    font-size: 20px;
+    font-weight: 800;
+    color: #785A28;
+}
+
+.classes {
+    text-align: left;
+    font-family: 'Bellefair-regular';
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 800;
+    color: #785A28;
+}
+
 
 .products__container {
     max-width: 1000px;
@@ -28,7 +54,8 @@
 
 .products__card-img {
     height: auto;
-    width: 100%;
+    margin-left: 30px;
+    width: 70%;
     object-fit: contain;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -54,6 +81,7 @@
 .products__goals-card-img {
     height: 100%;
     width: 100%;
+    margin-top: -65px;
     object-fit: contain;
     transition: all 0.3s ease;
     cursor: pointer;

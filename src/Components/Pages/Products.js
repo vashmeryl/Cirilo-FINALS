@@ -1,52 +1,58 @@
 import React from 'react';
 import '../Styles/Products.css';
-import DucatiV2 from '../Assets/ducatiV2.jpg'
-import DucatiV3 from '../Assets/ducatiV3.jpg'
-import DucatiV4 from '../Assets/ducatiV4.jpg'
-import DucatiV4s from '../Assets/ducatiV4S.jpg'
 import DucatiAllTerrain from '../Assets/ducatiAllterrain.jpg'
+import TopIcon from '../Assets/topIcon.png'
+import MidIcon from '../Assets/midIcon.png'
+import BotIcon from '../Assets/botIcon.png'
+import JungleIcon from '../Assets/jungleIcon.png'
+import ClassesIcons from '../Assets/classesIcons.png'
 
 function Products() {
   return (
     <section className='products' id='products'>
         <div className='products__container'>
+        <h1 className='roles'>ROLES AVAILABLE: </h1>
             <div className='products__card-wrapper'>
-
                 <div className='products__card'>
                     <div className='products__card-img-wrapper'>
-                        <img src={DucatiV2} className='products__card-img'></img>
+                        <img src={TopIcon} className='products__card-img'></img>
                     </div>
-                    <p className='products__card-description'>The Panigale V1 is powered by a 1103cc Desmosedici Stradale engine, delivering an exhilarating 214 horsepower. </p>
+                    <h1 className='role1'> Top Lane</h1>
+                    <p className='products__card-description'>Top lane has long been known as an island because of the combination of being a long lane, side lane, and solo lane.</p>
                 </div>
 
                 <div className='products__card'>
                     <div className='products__card-img-wrapper'>
-                        <img src={DucatiV3} className='products__card-img'></img>
+                        <img src={MidIcon} className='products__card-img'></img>
                     </div>
-                    <p className='products__card-description'>At the heart of the Panigale V2 is a 955cc Superquadro twin-cylinder engine that produces 155 horsepower and 104 Nm of torque.</p>
+                    <h1 className='role1'> Mid Lane </h1>
+                    <p className='products__card-description'>Mid is the perfect lane for people wanting to lane but also play a role similar to a Jungler and helps drive the tempo.</p>
                 </div>
 
                 <div className='products__card'>
                     <div className='products__card-img-wrapper'>
-                        <img src={DucatiV4} className='products__card-img'></img>
+                        <img src={BotIcon} className='products__card-img'></img>
                     </div>
-                    <p className='products__card-description'>The Panigale V3 is powered by a state-of-the-art 1103cc Desmosedici Stradale V4 engine, delivering an astonishing 217 horsepower and 123 Nm of torque.</p>
+                    <h1 className='role1'> Bot Lane </h1>
+                    <p className='products__card-description'>The bottom position is heavily focused around fighting potential given that is in closer proximity to the Dragon pit where many fights take place over capture of the objective.</p>
                 </div>
 
                 <div className='products__card'>
                     <div className='products__card-img-wrapper'>
-                        <img src={DucatiV4s} className='products__card-img'></img>
+                        <img src={JungleIcon} className='products__card-img'></img>
                     </div>
-                    <p className='products__card-description'>At the heart of the Panigale V4S is a powerful 955cc Superquadro twin-cylinder engine, delivering an impressive 155 horsepower and 104 Nm of torque.</p>
+                    <h1 className='role1'> Jungle </h1>
+                    <p className='products__card-description'>The jungle position provides a safe avenue to obtain gold and experience through killing monsters in jungle camps, without much interference from opponents.</p>
                 </div>
 
                 
                 <div className='products__goals-card'>
                     <div className='products__goals-card-img-wrapper'>
-                        <img src={DucatiAllTerrain} className='products__goals-card-img'/>
+                        <img src={ClassesIcons} className='products__goals-card-img'/>
                     </div>
                     <div className='products__goals-card-description-wrapper'>
-                        <p className='products__goals-card-description'>The Ducati Multistrada V4 is a versatile adventure touring motorcycle designed to conquer any terrain with ease. Built to deliver exceptional performance both on and off-road, the Multistrada V4 combines Ducati's legendary engineering with advanced technology and comfort features, making it the perfect companion for epic adventures.</p>
+                        <h1 className='classes'>Classes in League of Legends: </h1>
+                        <p className='products__goals-card-description'>Every champion in League of Legends has an assigned class, with a limited number also being considered in a secondary class. Classes and their interactions with one another influence gameplay pacing and decisions.</p>
                     </div>
                     
                 </div>
